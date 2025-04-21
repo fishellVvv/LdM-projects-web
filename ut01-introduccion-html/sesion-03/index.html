@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Lenguaje de Marcas UT02 introducción a HTML5 -->
+    <title>Clase 3</title>
+</head>
+<body>
+    <!-- Encabezados de la página -->
+    <h1>Hola soy un encabezado 1</h1>
+    <h2>Hola soy un encabezado 2</h2>
+    <h3>Hola soy un encabezado 3</h3>
+    <h4>Hola soy un encabezado 4</h4>
+    <h5>Hola soy un encabezado 5</h5>
+    <h6>Hola soy un encabezado 6</h6>
+
+    <!-- Párrafos -->
+    <p>Hola soy un párrafo</p>
+
+    <!-- Enlaces -->
+    <a href="https://www.google.com" target="_blank">Enlace a Google</a><br><br>
+
+    <!-- Imágenes -->
+    <img src="img/keanu.png" alt="Keanu Reeves en su moto" width="300" height="200">
+
+    <!-- Listas -->
+    <!-- Lista desordenada -->
+     <ul>
+        <li>Lunes</li>
+        <li>Sábado</li>
+        <li>Jueves</li>
+        <li>Martes</li>
+    </ul>
+    <!-- Lista ordenada -->
+    <ol>
+        <li>Lunes</li>
+        <li>Martes</li>
+        <li>Miércoles</li>
+        <li>Jueves</li>
+        <li>Viernes</li>
+        <li>Sábado</li>
+        <li>Domingo</li>
+    </ol>
+
+    <!-- Tablas -->
+    <table border="1">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Edad</th>
+        </tr>
+        <tr>
+            <td>Keanu</td>
+            <td>Reeves</td>
+            <td>58</td>
+        </tr>
+    </table><br>
+
+    <!-- Formulario -->
+    <form action="https://www.google.com" method="get">
+        <fieldset>
+            <legend>Formulario</legend>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="apellido">Apellido:</label><br>
+            <input type="text" id="apellido" name="apellido"><br><br>
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+    <!-- Contenedores -->
+    <div style="background-color: lightblue; padding: 20px; margin: 10px;">
+        <h2>Contenedor 1</h2>
+        <p>Este es un contenedor con fondo azul claro.</p>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <p>Quiero que me <em>veas</em></p>
+    <p>Quiero que me veas en <strong>negrita</strong></p>
+    <p>Soy un ejemplo de codigo <code>print("hola mundo")</code></p>
+    
+    <blockquote>"En abril aguas mil."</blockquote>
+
+    <dl>
+        <dt>Perro</dt>
+            <dd>Canis Lupus Familiaris</dd>
+            <dd>Perro común</dd>
+    </dl>
+
+    <section>
+        <h3>Título de mi sección</h3>
+        <p>Contenido de mi sección</p>
+    </section>
+
+    <header>
+        <h1>Encabezado del header</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+    </header>
+
+    <details>
+        <summary>Detalles</summary>
+        <p>Contenido adicional que se puede mostrar u ocultar.</p>
+        <p>Más información sobre el tema.</p>
+    </details><br>
+
+    <video controls>
+        <source src="video/" type="video/mp4">
+    </video><br>
+
+    <audio controls>
+        <source src="audio/" type="audio/mp3">
+    </audio><br>
+
+    <footer>
+        <p>Footer de la web</p>
+    </footer>
+
+    <script>
+        // Aquí el código de JavaScript
+        console.log("Hola, soy un script de JavaScript");
+    </script>
+
+</body>
+</html>

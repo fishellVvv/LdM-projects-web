@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas HTML</title>
+</head>
+<body>
+    <!-- tr, td, th
+    1- número de filas y luego de columnas
+    2- encabezados de tabla (th) y celdas de tabla (td)
+    3- combinación de filas y columnas (rowspan y colspan)
+    -->
+
+    <table border="1">
+        <caption><h1>Tabla 1</h1></caption>
+        <tr>
+            <td>Dato 1</td>
+            <td>Dato 2</td>
+            <td>Dato 3</td>
+        </tr>
+        <tr>
+            <td>Dato 4</td>
+            <td>Dato 5</td>
+            <td>Dato 6</td>
+        </tr>
+        <tr>
+            <td>Dato 7</td>
+            <td>Dato 8</td>
+            <td>Dato 9</td>
+        </tr>
+        <tr>
+            <td>Dato 10</td>
+            <td>Dato 11</td>
+            <td>Dato 12</td>
+        </tr>
+        <tr>
+            <td>Dato 13</td>
+            <td>Dato 14</td>
+            <td>Dato 15</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <caption><h1>Tabla con combinación de filas y columnas</h1></caption>
+        <tr>
+            <th>celda1</th>
+            <th>celda2</th>
+            <th>celda3</th>
+            <th>celda4</th>
+        </tr>
+        <tr>
+            <td rowspan="3">celda5</td>
+            <td>celda6</td>
+            <td colspan="2">celda7</td>
+        </tr>
+        <tr>
+            <td>celda8</td>
+            <td>celda9</td>
+            <td rowspan="2">celda10</td>
+        </tr>
+        <tr>
+            <td colspan="2">celda11</td>
+        </tr>
+    </table>
+
+    <table border="1">
+        <caption><h2>Tablas anidadas</h2></caption>
+        <tr>
+            <th>celda1</th>
+            <th>celda2</th>
+            <th>
+                <table border="1">
+                    <caption><h3>Tabla anidada</h3></caption>
+                    <tr>
+                        <th>celda1</th>
+                        <th>celda2</th>
+                        <th>celda3</th>
+                    </tr>
+                    <tr>
+                        <td>celda4</td>
+                        <td>celda5</td>
+                        <td>celda6</td>
+                    </tr>
+                    <tr>
+                        <td>celda7</td>
+                        <td>celda8</td>
+                        <td>celda9</td>
+                    </tr>
+                </table>
+            </th>
+        </tr>
+        <tr>
+            <td>celda4</td>
+            <td>celda5</td>
+            <td>celda6</td>
+        </tr>
+        <tr>
+            <td>celda7</td>
+            <td>celda8</td>
+            <td>celda9</td>
+        </tr>
+    </table>
+
+</body>
+</html>
