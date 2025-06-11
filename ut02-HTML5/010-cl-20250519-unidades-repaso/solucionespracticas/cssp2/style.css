@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: 'MiFuente';
+}
+
+.productos{
+    padding: 5%;
+    text-align: center;
+    
+}
+
+.productos article{
+    width: 90%;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background-color: #f9f9f9;
+    border: 1px red solid;
+    border-radius: 200px;
+    box-shadow: 4px 5px 18px 5px rgba(0,0,0,0.57);
+-webkit-box-shadow: 4px 5px 18px 5px rgba(0,0,0,0.57);
+-moz-box-shadow: 4px 5px 18px 5px rgba(0,0,0,0.57);
+}
+
+.productos article:hover{
+    background-color: black;
+    color:white;
+    transition: 1s;
+    
+}
+
+@font-face{
+    font-family: 'MiFuente';
+    src:url("../tip/exile_regular.ttf")
+}
+
+
+@media screen and (min-width: 600px){
+    .productos article{
+        width: 45%;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .productos article{
+        width: 30%;
+    }
+    
+}
