@@ -1,0 +1,33 @@
+.cookie-popup {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  background-color: azure;
+  color: #202020;
+  border-radius: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+  margin: auto;
+  z-index: 1000;
+  display: none;
+}
+
+.cookie-popup.show {
+  display: flex;
+}
+
+.cookie-popup button {
+  background-color: #007bff;
+  color: azure;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.cookie-popup a {
+  color: #007bff;
+  text-decoration: underline;
+}

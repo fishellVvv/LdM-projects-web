@@ -19,11 +19,11 @@ function cambiarColor() {
 }
 
 function moverCaja() {
+  recuadro.style.transition = "1s";
+
   if (recuadro.style.width === "20%") {
     recuadro.style.width = "400px";
-    recuadro.style.transition = "1s";
   } else {
     recuadro.style.width = "20%";
-    recuadro.style.transition = "1s";
   }
 }
