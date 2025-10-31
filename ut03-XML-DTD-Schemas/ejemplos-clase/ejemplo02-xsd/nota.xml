@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nota xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="nota.xsd">
+    <de>Tom</de>
+    <para>Dani</para>
+    <asunto>Recordatorio</asunto>
+    <cuerpo>Recuerda tirar la basura antes de salir. Buen finde.</cuerpo>
+</nota>
