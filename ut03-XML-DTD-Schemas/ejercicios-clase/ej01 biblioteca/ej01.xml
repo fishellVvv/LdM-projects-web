@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE biblioteca SYSTEM "ej01.dtd">
+<biblioteca>
+    <libro id="a1234">
+        <titulo>El Señor de los Anillos</titulo>
+        <autor>J.R.R. Tolkien</autor>
+        <anio>1954</anio>
+        <genero>Fantasía</genero>
+    </libro>
+    <libro id="b5678">
+        <titulo>El Nombre del viento</titulo>
+        <autor>Patrick Rothfuss</autor>
+        <anio>2007</anio>
+        <genero>Fantasía</genero>
+    </libro>
+</biblioteca>

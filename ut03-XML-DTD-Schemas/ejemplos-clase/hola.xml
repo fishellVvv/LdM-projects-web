@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<empresa>
+    <empleado>
+        <nombre>Pepe</nombre>
+        <apellidos></apellidos>
+        <edad></edad>
+    </empleado>
+    <empleado>
+        <nombre></nombre>
+        <apellidos></apellidos>
+        <edad></edad>
+    </empleado>
+    <empleado>
+        <nombre></nombre>
+        <apellidos></apellidos>
+        <edad></edad>
+    </empleado>
+</empresa>

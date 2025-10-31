@@ -1,0 +1,7 @@
+<!ELEMENT empresa (empleado+)>
+<!ELEMENT empleado (nombre, puesto, salario)>
+<!ATTLIST empleado id ID #REQUIRED>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT puesto (#PCDATA)>
+<!ELEMENT salario (#PCDATA)>
+<!ATTLIST salario moneda (EUR|USD) #REQUIRED>

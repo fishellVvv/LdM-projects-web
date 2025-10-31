@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empresa SYSTEM "ej02.dtd">
+<empresa>
+    <empleado id="e1">
+        <nombre>Juan López</nombre>
+        <puesto>DEV</puesto>
+        <salario moneda="EUR">32000</salario>
+    </empleado>
+    <empleado id="e2">
+        <nombre>Julian Whillson</nombre>
+        <puesto>HR</puesto>
+        <salario moneda="USD">50000</salario>
+    </empleado>
+</empresa>
