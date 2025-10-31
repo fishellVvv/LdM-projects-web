@@ -1,0 +1,13 @@
+<!ELEMENT club ((entrenador|entrenadora)*, jugadores)>
+    <!ATTLIST club codigo CDATA #REQUIRED>
+    <!ELEMENT entrenador (nombre, apellido, apellido, dni?, edad?)>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT apellido (#PCDATA)>
+        <!ELEMENT dni (#PCDATA)>
+        <!ELEMENT edad (#PCDATA)>
+    <!ELEMENT entrenadora (nombre, apellido, apellido, dni?, edad?)>
+    <!ELEMENT jugadores ((jugador|jugadora)+)>
+        <!ELEMENT jugador (nombre, apellido, apellido, dni?, edad?)>
+            <!ATTLIST jugador pos CDATA #REQUIRED>
+        <!ELEMENT jugadora (nombre, apellido, apellido, dni?, edad?)>
+            <!ATTLIST jugadora pos CDATA #REQUIRED>
