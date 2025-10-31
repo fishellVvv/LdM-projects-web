@@ -1,0 +1,7 @@
+<!ELEMENT nota (de, para, asunto, cuerpo)>
+<!ATTLIST nota xmlns:xsi CDATA #IMPLIED>
+<!ATTLIST nota xsi:noNamespaceSchemaLocation CDATA #IMPLIED>
+<!ELEMENT de (#PCDATA)>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT asunto (#PCDATA)>
+<!ELEMENT cuerpo (#PCDATA)>
