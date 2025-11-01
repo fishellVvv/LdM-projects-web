@@ -1,36 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE club SYSTEM "ej01.dtd">
-<club codigo="A01-12">
-    <entrenador>
-        <nombre>Diego</nombre>
-        <apellido>Martínez</apellido>
-        <apellido>Llorente</apellido>
-        <dni>12.345.678-A</dni>
-    </entrenador>
-    <entrenadora>
-        <nombre>Lucía</nombre>
-        <apellido>Campos</apellido>
-        <apellido>Vega</apellido>
-        <dni>90.123.456-B</dni>
-    </entrenadora>
-    <jugadores>
-        <jugador pos="2">
-            <nombre>Álvaro</nombre>
-            <apellido>Santos</apellido>
-            <apellido>Quintana</apellido>
-            <edad>12</edad>
-        </jugador>
-        <jugador pos="3">
-            <nombre>Manuel</nombre>
-            <apellido>Ríos</apellido>
-            <apellido>Parejo</apellido>
-            <edad>6</edad>
-        </jugador>
-        <jugadora pos="1">
-            <nombre>Elena</nombre>
-            <apellido>Benítez</apellido>
-            <apellido>Roldán</apellido>
-            <dni>78.901.234-C</dni>
-        </jugadora>
-    </jugadores>
+<!-- <!DOCTYPE club SYSTEM "ej01.dtd">
+<club codigo="A01-12"> -->
+<club xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ej01.xsd" codigo="A01-12">
+  <entrenador>
+    <nombre>Diego</nombre>
+    <apellido>Martínez</apellido>
+    <apellido>Llorente</apellido>
+    <dni>12.345.678-A</dni>
+  </entrenador>
+  <entrenadora>
+    <nombre>Lucía</nombre>
+    <apellido>Campos</apellido>
+    <apellido>Vega</apellido>
+    <dni>90.123.456-B</dni>
+  </entrenadora>
+  <jugadores>
+    <jugador pos="2">
+      <nombre>Álvaro</nombre>
+      <apellido>Santos</apellido>
+      <apellido>Quintana</apellido>
+      <edad>12</edad>
+    </jugador>
+    <jugador pos="3">
+      <nombre>Manuel</nombre>
+      <apellido>Ríos</apellido>
+      <apellido>Parejo</apellido>
+      <edad>6</edad>
+    </jugador>
+    <jugadora pos="1">
+      <nombre>Elena</nombre>
+      <apellido>Benítez</apellido>
+      <apellido>Roldán</apellido>
+      <dni>78.901.234-C</dni>
+    </jugadora>
+  </jugadores>
 </club>

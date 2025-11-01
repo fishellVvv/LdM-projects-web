@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="club">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:choice minOccurs="0" maxOccurs="2">
+          <xs:element name="entrenador" type="tipoEntrenador"/>
+          <xs:element name="entrenadora" type="tipoEntrenador"/>
+        </xs:choice>
+        <xs:element name="jugadores">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:choice minOccurs="1" maxOccurs="unbounded">
+                <xs:element name="jugador" type="tipoJugador"/>
+                <xs:element name="jugadora" type="tipoJugador"/>
+              </xs:choice>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="codigo" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="tipoEntrenador">
+    <xs:sequence>
+      <xs:element name="nombre" type="tipoTexto30"/>
+      <xs:element name="apellido" type="tipoTexto30"/>
+      <xs:element name="apellido" type="tipoTexto30"/>
+      <xs:choice minOccurs="0">
+        <xs:sequence>
+          <xs:element name="dni" type="xs:string"/>
+          <xs:element name="edad" type="tipoEdad" minOccurs="0"/>
+        </xs:sequence>
+        <xs:sequence>
+          <xs:element name="edad" type="tipoEdad"/>
+          <xs:element name="dni" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:choice>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="tipoJugador">
+    <xs:sequence>
+      <xs:element name="nombre" type="tipoTexto30"/>
+      <xs:element name="apellido" type="tipoTexto30"/>
+      <xs:element name="apellido" type="tipoTexto30"/>
+      <xs:choice minOccurs="0">
+        <xs:sequence>
+          <xs:element name="dni" type="xs:string"/>
+          <xs:element name="edad" type="tipoEdad" minOccurs="0"/>
+        </xs:sequence>
+        <xs:sequence>
+          <xs:element name="edad" type="tipoEdad"/>
+          <xs:element name="dni" type="xs:string" minOccurs="0"/>
+        </xs:sequence>
+      </xs:choice>
+    </xs:sequence>
+    <xs:attribute name="pos" type="tipoPos" use="required"/>
+  </xs:complexType>
+
+  <xs:simpleType name="tipoTexto30">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="30"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoEdad">
+    <xs:restriction base="xs:positiveInteger"/>
+  </xs:simpleType>
+
+  <xs:simpleType name="tipoPos">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="1"/>
+      <xs:maxInclusive value="30"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+</xs:schema>
